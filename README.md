@@ -4,20 +4,20 @@ A one-header libary with an overwhelmingly creative name for lots of simple Calc
 ## Building
 It's a single header file. If you really need build instructions, here are some simple steps on linux:
 
-* `cd Calculus/`
+* `cd Calculus/include`
 * `cat Calculus.h | cat > Calculus.h`
 
-Now just `#include "Calculus.h"` and you're set.
+Now just `#include "include/Calculus.h"` and you're set.
 
 ## Usage
-See `Calculus.h` for all methods. 
+See `include/Calculus.h` for all methods. 
 
 See `docs/` for HTML doxygen documentation.
 
 ## Example
 ```c++
 #include <iostream>
-#include "Calculus.h"
+#include "include/Calculus.h"
 
 int main()
 {
