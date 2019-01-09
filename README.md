@@ -1,5 +1,5 @@
-# Calculus Library
-A one-header libary for lots of simple Calculus I & II concepts.
+# Calculus
+A one-header libary with an overwhelmingly creative name for lots of simple Calculus I & II concepts.
 
 ## Building
 It's a single header file. If you really need build instructions, here are some simple steps on linux:
