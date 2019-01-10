@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Calculus: Calculus Library</title>
+<title>Calculus: Calculus</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,21 +63,22 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Calculus Library </div>  </div>
+<div class="title">Calculus </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>A one-header libary for lots of simple Calculus I &amp; II concepts.</p>
+<div class="textblock"><p>A one-header libary with an overwhelmingly creative name for lots of simple Calculus I &amp; II concepts.</p>
 <h2>Building</h2>
 <p>It's a single header file. If you really need build instructions, here are some simple steps on linux:</p>
 <ul>
-<li><code>cd Calculus/</code></li>
+<li><code>cd Calculus/include</code></li>
 <li><code>cat <a class="el" href="_calculus_8h_source.html">Calculus.h</a> | cat &gt; <a class="el" href="_calculus_8h_source.html">Calculus.h</a></code></li>
 </ul>
-<p>Now just <code>#include "Calculus.h"</code> and you're set.</p>
+<p>Now just <code>#include "include/Calculus.h"</code> and you're set.</p>
 <h2>Usage</h2>
-<p>See <code><a class="el" href="_calculus_8h_source.html">Calculus.h</a></code> for all methods.</p>
+<p>See <code><a class="el" href="_calculus_8h_source.html">include/Calculus.h</a></code> for all methods.</p>
 <p>See <code>docs/</code> for HTML doxygen documentation.</p>
-<h2>Notes</h2>
+<p>## Example </p><div class="fragment"><div class="line">{c++}</div><div class="line">#include &lt;iostream&gt;</div><div class="line">#include &quot;include/Calculus.h&quot;</div><div class="line"></div><div class="line">int main()</div><div class="line">{</div><div class="line">    //f(x) = x^2</div><div class="line">    calc::Func x_squared = [](double x)-&gt;double{</div><div class="line">        return x*x;</div><div class="line">    };</div><div class="line"></div><div class="line">    //F(x) = x^3/3</div><div class="line">    calc::Func x_squared_integral</div><div class="line">         = calc::integral(x_squared);</div><div class="line"></div><div class="line">    for(int i = 0; i &lt; 10; ++i)</div><div class="line">    {</div><div class="line">        std::cout &lt;&lt; &quot;F(&quot; &lt;&lt; i &lt;&lt; &quot;) = &quot;;</div><div class="line">        std::cout &lt;&lt; x_squared_integral(i);</div><div class="line">        std::cout &lt;&lt; std::endl;</div><div class="line">    }</div><div class="line">    return 0;</div><div class="line">}</div></div><!-- fragment --> <h4>Output</h4>
+<div class="fragment"><div class="line">F(0) = 0</div><div class="line">F(1) = 0.33333</div><div class="line">F(2) = 2.66667</div><div class="line">F(3) = 9</div><div class="line">F(4) = 21.3333</div><div class="line">F(5) = 41.6666</div><div class="line">F(6) = 72</div><div class="line">F(7) = 114.333</div><div class="line">F(8) = 170.667</div><div class="line">F(9) = 243</div></div><!-- fragment --><h2>Notes</h2>
 <p>Accuraccy could be improved but it's great for general-purpose. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->

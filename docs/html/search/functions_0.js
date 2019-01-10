@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['derivative',['derivative',['../namespacecalc.html#a7f3f283381cd1d3c9f0c546429bf607e',1,'calc']]]
+  ['addfunction',['addFunction',['../classcalc_1_1util_1_1_grapher.html#a2b41c65428bd27ba124ed75e7e6f3a8c',1,'calc::util::Grapher']]]
 ];

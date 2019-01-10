@@ -1,30 +1,33 @@
 var indexSectionsWithContent =
 {
-  0: "acdfilrs",
-  1: "c",
-  2: "dilr",
-  3: "als",
-  4: "f",
-  5: "c"
+  0: "acdfgilrs",
+  1: "g",
+  2: "c",
+  3: "acdgilrs",
+  4: "als",
+  5: "f",
+  6: "c"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "namespaces",
-  2: "functions",
-  3: "variables",
-  4: "typedefs",
-  5: "pages"
+  1: "classes",
+  2: "namespaces",
+  3: "functions",
+  4: "variables",
+  5: "typedefs",
+  6: "pages"
 };
 
 var indexSectionLabels =
 {
   0: "All",
-  1: "Namespaces",
-  2: "Functions",
-  3: "Variables",
-  4: "Typedefs",
-  5: "Pages"
+  1: "Classes",
+  2: "Namespaces",
+  3: "Functions",
+  4: "Variables",
+  5: "Typedefs",
+  6: "Pages"
 };
 

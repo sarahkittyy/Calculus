@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['roots',['roots',['../namespacecalc.html#a9c823691c401c6eea7089ddf5cedfbe9',1,'calc']]],
-  ['round',['round',['../namespacecalc.html#acc07bde592b31f465af5d7a47f83440a',1,'calc']]]
+  ['lambertw',['lambertW',['../namespacecalc.html#ade69ac8c832694bdbe3086cd1cb0f47c',1,'calc']]],
+  ['large',['LARGE',['../namespacecalc.html#a795849a2c0b2d97536dcfd29e009bc9d',1,'calc']]]
 ];

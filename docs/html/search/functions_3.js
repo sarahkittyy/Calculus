@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['roots',['roots',['../namespacecalc.html#a9c823691c401c6eea7089ddf5cedfbe9',1,'calc']]],
-  ['round',['round',['../namespacecalc.html#acc07bde592b31f465af5d7a47f83440a',1,'calc']]]
+  ['grapher',['Grapher',['../classcalc_1_1util_1_1_grapher.html#ae708f7eef7a3352487d7337e436252b0',1,'calc::util::Grapher']]]
 ];
