@@ -14,7 +14,7 @@ See `include/Calculus.h` for all methods.
 
 See `docs/` for HTML doxygen documentation.
 
-## Example
+## Examples
 ```c++
 #include <iostream>
 #include "include/Calculus.h"
@@ -36,6 +36,16 @@ int main()
 		std::cout << x_squared_integral(i);
 		std::cout << std::endl;
 	}
+
+	//Graph both functions
+	calc::util::Grapher g;
+	g.setDomain(-20,20);
+	g.setRange(-20,20);
+	g.setOutputDimensions(60,20);
+	g.addFunction(x_squared, '*');
+	g.addFunction(x_squared_integral, '&');
+	g.display();
+
 	return 0;
 }
 ```
@@ -52,7 +62,28 @@ F(6) = 72
 F(7) = 114.333
 F(8) = 170.667
 F(9) = 243
+                              |                             
+                              |                             
+                        ***   |     *                       
+                          *   |     *                       
+                          *   |     *                       
+                          *   |     *                       
+                          **  |   &&*                       
+                           *  |   &                         
+                           ***|  *&                         
+                             *|  &&                         
+-----------------------------&&&&&--------------------------
+                           &&&|                             
+                           &  |                             
+                           &  |                             
+                           &  |                             
+                          &&  |                             
+                              |                             
+                              |                             
+                              |                             
+                              |                             
+
 ```
 
 ## Notes
-Accuraccy could be improved but it's great for general-purpose.
+You probably shouldn't trust the precise accuracy of this, especially for tricky functions that jump values often.
