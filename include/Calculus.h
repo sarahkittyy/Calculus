@@ -131,7 +131,7 @@ namespace calc
 	 */
 	Func integral(Func fx, double valid_value = 0)
 	{
-		return [=, &fx](double x)->double{
+		return [=](double x)->double{
 			return integral_definite(fx, valid_value, x);
 		};
 	}
