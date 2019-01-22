@@ -212,6 +212,20 @@ namespace calc
 		};
 	}
 
+	/**
+	 * @brief Returns the first solution to setting left & right equal to eachother.
+	 * 
+	 * @param left Left side of the equal sign.
+	 * @param right Right side of the equal sign.
+	 * @return double The first found solution.
+	 */
+	double solve(Func left, Func right)
+	{
+		return roots([&](double x)->double{
+			return left(x)-right(x);
+		});
+	}
+
 	//////////////////////////UTILS/////////////////////////////
 	
 	/**
@@ -455,5 +469,8 @@ namespace calc
 				return (value - lower) * (newupper - newlower) / (upper - lower) + newlower;
 			}
 		};
+		/////////END GRAPHER CLASS DEF/////////////
+
 	}
+	/////////END UTIL NAMESPACE//////////////
 }
